@@ -1,0 +1,268 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>For My Moonlight ♡</title><style>:root{--bg1:#07152f;--bg2:#38205c;--bg3:#751f48;--glass:#ffffff12;--line:#ffffff2b;--txt:#f8f4ff}*{box-sizing:border-box}body{margin:0;color:var(--txt);font-family:Georgia,serif;background:radial-gradient(circle at 15% 20%,#2855be55,transparent 32%),radial-gradient(circle at 85% 75%,#b02f5950,transparent 35%),linear-gradient(135deg,var(--bg1),var(--bg2) 50%,var(--bg3));min-height:100vh}body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.25;background-image:radial-gradient(circle,#fff 0 1px,transparent 1.5px);background-size:190px 190px}.moon{position:fixed;right:8%;top:7%;width:150px;height:150px;border-radius:50%;background:#fff0ffdd;box-shadow:0 0 55px #d7caff66}.moon:after{content:"";position:absolute;width:155px;height:155px;border-radius:50%;background:#111838;left:45px;top:-10px}.wrap{position:relative;width:min(1050px,92%);margin:auto;padding:60px 0}.hero{text-align:center;min-height:75vh;display:flex;flex-direction:column;justify-content:center;align-items:center}.tiny{text-transform:uppercase;letter-spacing:5px;font-size:.75rem;opacity:.7}h1{font-size:clamp(3.2rem,9vw,6.5rem);font-weight:normal;line-height:.9;margin:20px 0}.intro{max-width:650px;line-height:1.8;opacity:.85}.pill,button{color:var(--txt);background:#ffffff10;border:1px solid var(--line);border-radius:999px;padding:10px 17px;backdrop-filter:blur(12px)}button{font-family:inherit;cursor:pointer;margin-top:20px}.section-title{text-align:center;margin:50px 0 28px}.section-title h2{font-weight:normal;font-size:2rem;margin-bottom:7px}.section-title p{opacity:.65}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}.card{min-height:175px;padding:24px;border:1px solid var(--line);border-radius:22px;background:#ffffff0d;backdrop-filter:blur(14px);cursor:pointer;transition:.25s}.card:hover{transform:translateY(-6px);background:#ffffff16}.emoji{font-size:2rem}.card h3{margin:13px 0 7px}.card p{opacity:.65;line-height:1.5}.letter{display:none;margin-top:20px;padding:30px;border:1px solid var(--line);border-radius:24px;background:#08102d88;backdrop-filter:blur(18px);line-height:1.9;white-space:pre-line;animation:show .35s ease}.letter.open{display:block}.letter h3{font-size:1.6rem;font-weight:normal;margin-top:0}.note{margin-top:20px;padding:14px;border-left:3px solid #e7a9d2;background:#ffffff08;opacity:.75}.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:15px}.photo{
+  min-height:220px;
+  border:1px solid #ffffff22;
+  border-radius:20px;
+  overflow:hidden;
+  background:#ffffff08;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.photo img{
+  width:100%;
+  height:100%;
+  min-height:220px;
+  object-fit:cover;
+  display:block;
+  transition:.3s;
+}
+
+.photo:hover img{
+  transform:scale(1.04);
+}ext-align:center;background:#ffffff08}.universe-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+  margin-top:25px;
+}
+
+.universe-card{
+  overflow:hidden;
+  border:1px solid var(--line);
+  border-radius:22px;
+  background:#ffffff0b;
+  transition:.25s;
+}
+
+.universe-card:hover{
+  transform:translateY(-5px);
+  background:#ffffff12;
+}
+
+.universe-card img{
+  display:block;
+  width:100%;
+  height:280px;
+  object-fit:cover;
+}
+
+.universe-content{
+  padding:20px;
+}
+
+.universe-content h4{
+  margin:0 0 8px;
+  font-size:1.25rem;
+  font-weight:normal;
+}
+
+.universe-content .universe-name{
+  opacity:.6;
+  font-size:.85rem;
+  margin-bottom:12px;
+}
+
+.universe-content p{
+  margin:0;
+  line-height:1.7;
+  opacity:.8;
+}.final{margin-top:60px;padding:45px 25px;text-align:center;border:1px solid var(--line);border-radius:28px;background:linear-gradient(145deg,#542b7866,#8b315f44);line-height:1.9;white-space:pre-line}.final h2{font-weight:normal;font-size:2.4rem}footer{text-align:center;opacity:.5;margin-top:60px}@keyframes show{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}@media(max-width:600px){.moon{width:90px;height:90px}.moon:after{width:95px;height:95px}.wrap{padding-top:30px}}</style></head><body><div class="moon"></div><main class="wrap"><header class="hero"><div class="tiny">27.06.2026 · 01:40 · Argentina</div><h1>My Moonlight ♡</h1><p class="intro">Tres meses pueden parecer poco tiempo para algunas personas. Pero para mí, estos tres meses son una fantasía hecha realidad. Así que... hice esto para ti.</p><div class="pill">✦ Feliz 3 meses, Joshy ✦</div><button onclick="music()">♫ Reproducir nuestra canción</button><small id="status">Birds of a Feather · opcional</small><audio id="song" loop><source src="birds-of-a-feather.mp3" type="audio/mpeg"></audio></header><section><div class="section-title"><h2>♡ Abre solo cuando... ♡</h2><p>Puedes abrirlas en cualquier orden. Es tuyo, tonoto .</p></div><div class="grid"><div class="card" onclick="openL('sad')"><div class="emoji">🌧️</div><h3>...estés triste</h3><p>Para esos días en los que necesitas un poquito de cariño.</p></div><div class="card" onclick="openL('hug')"><div class="emoji">🫂</div><h3>...necesites un abrazo</h3><p>Uno de esos abrazos que no puedo darte IRL.</p></div><div class="card" onclick="openL('sleep')"><div class="emoji">🌙</div><h3>...no puedas dormir</h3><p>Para hacerte compañía un ratito durante la noche.</p></div><div class="card" onclick="openL('miss')"><div class="emoji">💭</div><h3>...me extrañes</h3><p>Por si alguna vez la distancia se siente demasiado.</p></div><div class="card" onclick="openL('laugh')"><div class="emoji">😂</div><h3>...necesites reírte</h3><p>Probablemente haya alguna estupidez, quien sabe.</p></div><div class="card" onclick="openL('song')"><div class="emoji">🎧</div><h3>...quieras escuchar algo</h3><p>Por qué elegí nuestra canción.</p></div><div class="card" onclick="openL('memories')">
+  <div class="emoji">🌌</div>
+  <h3>...quieras vernos en otro universo</h3>
+  <p>Algunos personajes que me recuerdan a nosotros.</p>
+</div><div class="card" onclick="openL('love')"><div class="emoji">❤️</div><h3>...quieras saber qué siento</h3><p>Probablemente lo que mas me costó escribir</p></div></div><article id="sad" class="letter"><h3>🌧️ Para cuando estés triste</h3>Hey, Joshy. Si has llegado hasta aquí probablemente estás teniendo uno de esos días que son todos malos ni uno bueno. No sé exactamente qué pasó, Pero si quiero recordarte varias cosas: no tienes que solucionar todo ahora mismo, puedes y debes darte algún descanso. Puedes estar triste, estresado, enojado, con ganas de llorar y demás. Puedes tomarte tu tiempo. Y aunque no pueda aparecer mágicamente a tu lado para darte un abrazo (y si pudiera créeme que lo haría), quiero que recuerdes que hay Alguien al otro lado de la pantalla que te quiere y que te ama. Así que respira un poquito, cierra los ojos y relájate, ¿Si?, que tu tonoto te ama, Moonlight. ♡</article><article id="hug" class="letter"><h3>🫂 Para cuando necesites un abrazo</h3>Ol! Considera esto como un abrazo virtual, uno de esos largos como los que tanto nos hace falta. Se qué no es lo mismo porque #textnoreal, pero algún día espero poder cambiar esta pantalla por tus brazos rodeándome.🫂</article><article id="sleep" class="letter"><h3>🌙 Para cuando no puedas dormir</h3>Hola, My Beauty. Si estás leyendo esto de madrugada probablemente ahora estaría con ganas de agarrarte del cuello porque no te dormiste. Pero como claramente ya llegaste hasta aquí, quédate un ratito. Piensa en algunos de nuestros momentos favoritos. En algo tonto. En algo que te haya hecho reír (y no, Ceboshas no cuenta). Y si quieres, imagínate que esto es como una luz de noche para que puedas dormir (chécate primero abajo de la cama, imagínate que hay un monstruo y no estoy yo). En fin, Buenas noches Joshua, más te vale que estés durmiendo o te apuñalo ♡</article><article id="miss" class="letter"><h3>💭 Para cuando me extrañes</h3>Sé bien que la distancia a veces es una perra. Pero hay algo bonito en saber que, incluso lejos, nos seguimos eligiendo, seguimos buscando formas de estar en la vida del otro. Así que si me extrañas, recuerda que probable y seguramente, yo también estoy pensando en ti. Pensando en todos los besos, abrazos, caricias y demás que te voy a dar cuando finalmente estemos cara a cara (me llegas a tocar el pelo y te muerdo el labio, maldito). Hasta que podamos acortar esa distancia, tendremos mensajes, llamadas (algún día, mardito), dibujos, roles obviamente y todas esas weas que nos mantienen cerca.</article><article id="laugh" class="letter">
+  <h3>😂 Para cuando necesites reírte</h3>
+
+  Ol, welcome to the fakin Flancirco. Hoy tenemos el mejor chiste de la galaxia.
+
+  <div style="margin:25px 0;text-align:center;">
+    <p style="opacity:.7;margin-bottom:10px;">🎙️ Una pequeña intervención de tu tonoto:</p>
+    <audio controls style="width:100%;max-width:500px;">
+      <source src="audio/ceboshas.mp3" type="audio/mpeg">
+      Tu navegador no puede reproducir este audio.
+    </audio>
+  </div>
+
+  Si no te hizo reír, que lo dudo, voy a hacer que sí para no herir mis sentimientos.
+
+  Te amo, tonoto.
+</article><article id="song" class="letter"><h3>🎧 Para cuando quieras escuchar nuestra canción</h3>Elegí “Birds of a Feather” porque simplemente es nuestra canción. Hay canciones que terminan asociándose con personas. Y ahora, cada vez que escuche esta, probablemente una parte de mi cabeza vaya a pensar en ti. si es que no lo hago desde antes.</article><article id="memories" class="letter">
+
+  <h3>🌌 Para cuando quieras vernos en otro universo</h3>
+
+  <p>
+    Hay algo que me gusta mucho de nosotros:
+    que a veces encontramos personajes en los que nos reflejamos, ya sea en personalidad, apariencia o porque si
+  </p>
+
+  <p>
+    Quizá no sean exactamente iguales a nosotros.
+    Quizá solamente tengan una pequeña cosa que me recuerda a ti,
+    a mí, o a la forma en la que nos queremos.
+  </p>
+
+  <p>
+    Así que pensé...
+    ¿Seremos novios en otros universos? He aquí la respuesta
+  </p>
+
+  <div class="universe-grid">
+
+    <div class="universe-card">
+      <img src="imagenes/ship1.jpg" alt="Universo 1">
+
+      <div class="universe-content">
+        <div class="universe-name">🌌 Jujutsu Kaisen</div>
+        <h4>Yuki × Choso</h4>
+
+        <p>
+          [Somos esos porque, así como Choso aprendió a amar por Yuki. Yo aprendí a amar por ti, a volver a permitirme sentir. Tu me has cambiado como Ella a Él.]
+        </p>
+      </div>
+    </div>
+
+
+    <div class="universe-card">
+      <img src="imagenes/ship2.jpg" alt="Universo 2">
+
+      <div class="universe-content">
+        <div class="universe-name">🌌 Chainsaw Man</div>
+        <h4>Aki × Angel</h4>
+
+        <p>
+          [Somos esos porque, Así como Aki aprendió a cuidar y amar a alguien a quien al principio solo veía como herramienta, yo aprendí a confiar y a entregarme por completo a ti. Incluso si, con el simple roce de tu mano, pierda años de vida.]
+        </p>
+      </div>
+    </div>
+
+
+    <div class="universe-card">
+      <img src="imagenes/ship3.jpg" alt="Universo 3">
+
+      <div class="universe-content">
+        <div class="universe-name">🌌 Chainsaw Man 2</div>
+        <h4>Denji × Reze</h4>
+
+        <p>
+          [Somos esos porque al igual que Denji y Reze, nosotros también sufrimos con nuestro pasado, con nuestro caos. Y aún así, encontramos en el otro un momento de paz, de ternura. Me has enseñado como Reze que, por más duro que sea el destino, a veces una sola persona basta para cambiarlo todo.]
+        </p>
+      </div>
+    </div>
+
+
+    <div class="universe-card">
+      <img src="imagenes/ship4.jpg" alt="Universo 4">
+
+      <div class="universe-content">
+        <div class="universe-name">🌌 Kimetsu no Yaiba</div>
+        <h4>Obanai × Mitsuri</h4>
+
+        <p>
+          [Somos esos porque, así como Obanai se sintió digno de amar gracias a Mitsuri, yo aprendí a aceptarme y a creer que merezco ser amado por ti. Tú miras mis cicatrices con la misma dulzura con la que ella miraba las de él, y me has hecho sentir normal, valioso y profundamente querido como nunca antes.]
+        </p>
+      </div>
+    </div>
+
+    <div class="universe-card">
+      <img src="imagenes/ship5.jpg" alt="Universo 5">
+
+      <div class="universe-content">
+        <div class="universe-name">🌌 Jujutsu Kaisen 2</div>
+        <h4>Kirara × Hakari</h4>
+
+        <p>
+          [Somos esos porque, igual que Kirara y Hakari se eligen y se acompañan sin importar lo que diga el resto del mundo, tú y yo nos elegimos cada día. Con tu “fiebre” constante me recordaste que el amor verdadero es lealtad, diversión y protección mutua… y que juntos siempre estamos en nuestro mejor momento.]
+        </p>
+      </div>
+    </div>
+
+    <div class="universe-card">
+      <img src="imagenes/ship6.jpg" alt="Universo 6">
+
+      <div class="universe-content">
+        <div class="universe-name">🌌 Death Note</div>
+        <h4>L × Missa</h4>
+
+        <p>
+          [Somos esos porque, así como L encontró una conexión inesperada y genuina con Misa a pesar de lo diferentes que eran, yo encontré en ti a la persona que me saca de mi cabeza y me hace sentir de una forma que no sabía posible. Tú me diste algo que no buscaba, algo cálido y real, y me has demostrado que el amor puede nacer incluso en los lugares más improbables.]
+        </p>
+      </div>
+    </div>
+
+    <div class="universe-card">
+      <img src="imagenes/ship7.jpg" alt="Universo 7">
+
+      <div class="universe-content">
+        <div class="universe-name">🌌 DanDaDan</div>
+        <h4>Okarun × Momo</h4>
+
+        <p>
+          [Somos literalmente esos, no sé que mas buscabas leer aquí, Pendejo.... Nah mentira, somos esos porque, igual que Okarun y Momo se convirtieron en el refugio del otro mientras enfrentaban lo imposible, tú te convertiste en mi hogar en medio de todo. Aprendí a confiar, a pelear por alguien y a enamorarme de verdad gracias a ti… contigo, Mi mundo se llena de color]
+        </p>
+      </div>
+    </div>
+
+    <div class="universe-card">
+      <img src="imagenes/ship8.jpg" alt="Universo 8">
+
+      <div class="universe-content">
+        <div class="universe-name">🌌 The Special One</div>
+        <h4>Inosuke × Aoi</h4>
+
+        <p>
+          [Qué te puedo decir que no sepas ya de estos dos. Siempre fuimos ellos, estábamos destinados desde que entré al team y escogí a Inosuke. Como ambos sabemos, detrás de cada rol, de cada interacción que tenían, había un pedazo nuestro. Así que hubiera Sido pecado no incluirlo en esta lista. Porque tú eres la Aoi que domesticó a mi Inosuke...]
+        </p>
+      </div>
+    </div>
+
+    <div class="universe-card">
+      <img src="imagenes/ship9.jpg" alt="Universo 9">
+
+      <div class="universe-content">
+        <div class="universe-name">🌌 JoJo´ s Bizarre Adventure</div>
+        <h4>Anasui × Jolyne</h4>
+
+        <p>
+          [Somos esos porque, así como Anasui encontró en Jolyne una razón para cambiar, a alguien cuyo amor fue tal que llegó a dar su vida por ella. Yo encontré en ti todo eso y más. Encontré el motivo para segui peleando por mi futuro, porque estás en él. Tu determinación, tu valor y tu forma de ser me purificaron, me dieron esperanza y una razón para seguir intentando ser digno de caminar a tu lado... por siempre.]
+        </p>
+      </div>
+    </div>
+
+
+</article><article id="love" class="letter"><h3>❤️ Para cuando quieras saber qué siento</h3>No tengo ni idea de como decir esto. Porque no creo que exista una forma perfecta para explicar lo que siento por ti. Pero si sé que estos 3 meses, 13 semanas, 62 dias, 1488 horas, 89280 minutos, 5357340 segundos cambiaron toda mi vida, Me gusta tenerte aquí, me gusta hablar contigo, me gusta compartir mi vida a tu lado, me gusta saber que existe una persona a la que puedo contarle todo lo que me pase, que incluso en mis peores momentos, cuando no quiero saber nada. Ahí estas tu. No quiero escribir algo que suene perfecto, porque no existe tal cosa... O bueno, si existe y se llama Joshua Kael, Paula Janin, como gustes que te digan, porque estoy hablando de ti, MI Amor. Simplemente gracias por todo mi amor, te adoro demasiado. ♡</article></section><section><div class="section-title"><h2>📸 Mis fotos favoritas de mi artista favorito.</h2></div><div class="gallery">
+  <div class="photo">
+    <img src="imagenes/foto1.jpg" alt="El Recuerdo de nuestro primer mes juntos, me acuerdo estar llorando de la emoción por recibir este hermoso dibujo.">
+  </div>
+
+  <div class="photo">
+    <img src="imagenes/foto2.jpg" alt="Mi polola chibi mi polola chibi. es como mi polola... pero chibi, ah, y tambien es lo mejor que me pudieron haber dado en toda mi existencia.">
+  </div>
+
+  <div class="photo">
+    <img src="imagenes/foto3.jpg" alt="Nuestro recuerdo 3">
+  </div>
+
+  <div class="photo">
+    <img src="imagenes/foto4.jpg" alt="El primer dibujo de nuestros wawas ¿será acaso una premonición? (tu serás Inosuke, pendejo).">
+  </div>
+</div></div></section><section class="final"><div class="tiny">Una última cosa...</div><h2>🔐 Para mi Moonlight</h2>Bueno, mi amor.
+
+Si llegaste aquí es porque leíste todo lo que te dejé más arriba, aunque siento que todavía me faltan muchas palabras para decirte lo mucho que significas para mí.
+
+Estos tres meses fueron solo el comienzo de nuestra historia juntos.
+
+Te has vuelto una persona a quien sinceramente no cambiaría por nada ni por nadie. Llegaste a mi vida en uno de mis puntos más bajos y, poco a poco, te convertiste en ese faro que ilumina mis noches. Y por más que la distancia me haga desear poder estar a tu lado, también me hace valorar cada momento que tenemos frente a una pantalla, porque cuando finalmente nos veamos, vamos a poder hacer todo lo que queramos. Vamos a poder ser felices juntos, sin una pantalla de por medio.
+
+Quiero, necesito y me encantaría que sepas que yo te amo por quien eres. Amo a ese chico que dibuja, que escribe, que se ríe, que llora. Te amo a ti, por tu manera de hablarme, por las burlas hacia mi falta de enfoque visual —jamás te lo voy a perdonar, chaparro— y hasta por esas cosas que probablemente ni siquiera sabes que amo de ti... Y probablemente yo tampoco.
+
+No sé cómo explicarte exactamente qué hiciste para convertirte en alguien tan importante para mí. Solo sé que pasó. Y ahora no puedo imaginar una vida sin ti.
+
+Gracias. Simplemente, gracias por elegirme, por confiar en mí y por dejarme formar parte de tu vida. Por contarme tus cosas, por permitirme ser ese hombro en el que te apoyas cuando estás mal.
+
+Espero poder seguir siendo alguien con quien puedas sentirte seguro, amado y acompañado, incluso cuando físicamente no pueda estar contigo.
+
+Felices tres meses, My Love.
+
+Y gracias por esto. Gracias por mostrarme que, con la persona indicada, vivir tiene sentido.
+</section><footer>Hecho con ♡ por Tu Flan · 27.06.2026 → ∞</footer></main><script>function openL(id){document.querySelectorAll('.letter').forEach(x=>x.classList.remove('open'));const e=document.getElementById(id);e.classList.add('open');setTimeout(()=>e.scrollIntoView({behavior:'smooth',block:'center'}),30)}function music(){const s=document.getElementById('song'),t=document.getElementById('status');if(s.paused){s.play().then(()=>t.textContent='♫ Reproduciendo · Birds of a Feather').catch(()=>t.textContent='Pon birds-of-a-feather.mp3 en la misma carpeta')}else{s.pause();t.textContent='Birds of a Feather · pausada'}}</script></body></html>
